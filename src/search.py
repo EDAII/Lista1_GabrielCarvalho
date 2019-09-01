@@ -48,6 +48,36 @@ def interpolation_search(array, num):
   return False
 
 # Busca indexada
-def indexed_search(array):
-  pass
+def indexed_search(idx, array, num):
+  low = 0
+  for i in range (0, len(idx)):
+    if(num == idx[i][0]):
+      return idx[i][1]
+    elif(idx[i][0] > num):
+      for x in range(low, idx[i][1]):
+        if(num == array[x]):
+          return x
+    elif(num > idx[-1][0]):
+      for x in range(idx[-1][1], len(array)):
+        if(num == array[x]):
+          return x
+    low = idx[i][1]
 
+  return False
+
+# Criar tabela de index
+def create_index(array, gap=None):
+  
+  if(not gap): 
+    gap = int(len(array)/(len(array)/1000))
+
+  index = []
+  i = 1
+  while (i*gap<len(array)-1):
+    j = []
+    j.append(array[i*gap])
+    j.append(array.index(array[i*gap]))
+    index.append(j)
+    i+=1
+
+  return index
