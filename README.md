@@ -1,15 +1,15 @@
 # Lista 1 - Métodos de Busca 
 
-Aplicação que utiliza os algoritmos de buscas para pesquisar os pré-requisitos de uma matéria em um base de dados de contém todas as matérias da UnB.
+Aplicação que utiliza os algoritmos de buscas para pesquisar os pré-requisitos de uma matéria em uma base de dados que contém todas as matérias da UnB.
 
-### Algoritmos Utilizados:
+## Algoritmos Utilizados:
 
 - Busca sequêncial linear 
 - Busca binária
 - Busca por interpolação
 - Busca sequêncial indexada
 
-## Instalação
+## Execução:
 
 Para rodar a aplicação é necessário o [Python3](https://www.python.org/downloads/) instalado.
 
