@@ -2,7 +2,7 @@
 def linear_search(array, num):
   for a in array:
     if(num == a): 
-      return a
+      return array.index(a)
   
   return False 
 
